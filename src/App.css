@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading-div{
+  padding: 2% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  height: 13vh;
+}
+
+.heading-text{
+  font-weight: 900;
+  color: tomato;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+}
+
+.game-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 87vh;
+  width: 100vw;
+  background: lightcyan;
+}
+
+.game-fit{
+  height: 300px;
+  width: 600px;
+  background: lightsalmon;
+  padding: 2% 4%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-text-div{
+  margin: 20px;
+  color: white;
+}
+
+.input-div{
+  margin: 20px;
+}
+
+input{
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+input:focus{
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.next-btn-div{
+  margin: 20px;
+}
